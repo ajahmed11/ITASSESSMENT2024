@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Section</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Font Awesome for icons -->
+<style>
+  /* General styles */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #de7812;
+    margin: 0;
+    padding: 0;
+    color: #333;
+  }
+
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #e0943d;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Header styles */
+  h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+  }
+
+  /* Contact form styles */
+  .contact-form {
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    color: #333;
+  }
+
+  .contact-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+
+  .contact-form input[type="text"],
+  .contact-form input[type="email"],
+  .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+  }
+
+  .contact-form textarea {
+    resize: vertical;
+  }
+
+  .contact-form input[type="submit"] {
+    padding: 12px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .contact-form input[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+
+  /* Map section */
+  .map-container {
+    margin-top: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .map-container iframe {
+    width: 100%;
+    height: 400px; /* Adjust the height as needed */
+    border: 0;
+  }
+
+  /* Location info styles */
+  .location-info {
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+  }
+
+  .location-info i {
+    margin-right: 10px;
+  }
+
+  /* Footer styles */
+  footer {
+    background-color: #333333;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 50px;
+    position: relative;
+    border-top: 4px solid #4CAF50;
+  }
+
+  footer p {
+    margin-bottom: 10px;
+  }
+
+  footer a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  footer a:hover {
+    color: #4CAF50;
+  }
+
+  /* Logo styles */
+  .logo {
+    max-width: 100px;
+    opacity: 0.8;
+    margin-bottom: 20px;
+  }
+
+  /* Background pattern */
+  footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right, #333333, #222222);
+    opacity: 0.05;
+    z-index: -1;
+  }
+</style>
+</head>
+<body>
+<div class="container" id="contact">
+  <h2>Contact Us</h2>
+  <div class="contact-form">
+    <form action="#" method="POST">
+      <label for="studentName">Full Name:</label>
+      <input type="text" name="name" id="studentName" placeholder="Enter your full name" required>
+      <label for="collegeName">College Name:</label>
+      <input type="text" id="collegeName" name="collegeName" placeholder="Enter your college name" required>
+      <label for="address">Address:</label>
+      <input type="text" id="address" name="address" placeholder="Enter your address" required>
+      <label for="contactNumber">Contact Number:</label>
+      <input type="text" id="contactNumber" name="contactNumber" placeholder="Enter your contact number" required>
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="5" placeholder="Enter your message" required></textarea>
+      <input type="submit" value="Send Message">
+    </form>
+  </div>
+  <!-- Map section -->
+  <div class="map-container">
+    <!-- Replace the src attribute with actual map embed code -->
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3533.706606462181!2d85.33896411506177!3d27.69219848279298!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjfCsDA5JzA4LjciTiA4NcKwMzInNTIuOCJF!5e0!3m2!1sen!2snp!4v1636426095643!5m2!1sen!2snp" allowfullscreen></iframe>
+  </div>
+  <!-- Location info -->
+  <div class="location-info">
+    <i class="fas fa-map-marker-alt"></i>Kathmandu-32-Baneshwor, Nepal<br><br>
+    <i class="fas fa-phone-alt"></i>Contact US: +977 14888999 / +977 14889000<br><br>
+    <i class="fas fa-envelope"></i>Send Your Documents to: kpcnepal@gmail.com<br><br>
+    <i class="fas fa-map-marker-alt"></i>KPCC, Old-Baneshwor Road, Ktm.
+  </div>
+</div>
+
+<footer>
+  <img src="logo-design-49582.png" alt="Logo" class="logo">
+  <p>&copy; Kathmandu Professional University. All Rights Reserved.</p>
+  <p>Contact: <a href="mailto:kpcinfo@gmail.com">kpcinfo@gmail.com</a></p>
+  <p>Address: Mid-Bnaeshwor Street, Baneshwor, Nepal</p>
+  <p>Phone: +977-1456-7890</p>
+  <p>
+    <a href="#">Privacy Policy</a>
+    |
+    <a href="#">Terms & Conditions</a>
+  </p>
+</footer>
+
+</body>
+</html>

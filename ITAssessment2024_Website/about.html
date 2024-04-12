@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kathmandu Professional University, Nepal (Ajaj)</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #868e17; /* Light gray background */
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: #bda520; /* Dark background color */
+            color: #ffffff; /* White text color */
+            padding: 20px 0;
+            text-align: center;
+            border-bottom: 4px solid #28a745; /* Green border bottom */
+        }
+
+        header h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 18px;
+            margin: 0;
+        }
+
+        /* Navigation Styles */
+        nav {
+            background-color: #007bff; /* Blue navigation background */
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: #ffffff; /* White link color */
+            text-decoration: none;
+            padding: 10px 20px;
+            transition: background-color 0.3s ease; /* Smooth transition for link color */
+        }
+
+        nav a:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+        }
+
+        /* Content Styles */
+        .content {
+            padding: 20px;
+        }
+
+        .team-member {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            background-color: #510f0f;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .team-member img {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+
+        .team-member h3 {
+            margin: 0;
+            color: #007bff; /* Blue team member name */
+        }
+
+        .team-member p {
+            margin-bottom: 15px;
+        }
+
+        /* Form Styles */
+        form {
+            max-width: 700px;
+            margin: 0 auto;
+            background-color: #a8999d;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        form label {
+            display: block;
+            font-weight: bold;
+        }
+
+        form input,
+        form select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #250a91; /* Gray border */
+            border-radius: 5px;
+        }
+
+        form input[type="submit"] {
+            background-color: #28a745; /* Green submit button */
+            color: #ffffff;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease; /* Smooth transition for button color */
+        }
+
+        form input[type="submit"]:hover {
+            background-color: #218838; /* Darker green on hover */
+        }
+        
+        /* Footer Styles */
+        footer {
+            background-color: #343a40; /* Dark background color */
+            color: #ffffff; /* White text color */
+            padding: 20px 0;
+            text-align: center;
+            border-top: 4px solid #28a745; /* Green border top */
+        }
+
+        footer p {
+            margin-bottom: 10px;
+        }
+
+        footer a {
+            color: #3b0da5; /* White link color */
+            text-decoration: none;
+            transition: color 0.3s ease; /* Smooth transition for link color */
+        }
+
+        footer a:hover {
+            color: #28a745; /* Green color on hover */
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Kathmandu Professional University</h1>
+        <p>Your gateway to quality education</p>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#team">Team</a>
+        <a href="#form">Apply Now</a>
+    </nav>
+
+    <div class="content">
+        <div class="container" id="about">
+            <h2>About Our University</h2>
+            <p>Since our founding in 1910, we’ve been expanding Kathmandu Professional University’s reach beyond the traditional student and conventional classroom. What began as a series of courses for the local community has evolved into an accredited Harvard school serving adult learners around the globe, from over 120 countries.</p>
+            <p>As one of 12 degree-granting schools at Kathmandu Professional University, we teach the largest and most eclectic student body at the University. Our students come to us from various time zones and cultural and professional backgrounds.</p>
+        </div>
+
+        <div class="container" id="team">
+            <h2>Our Team</h2>
+            <div class="team-member">
+                <img src="arbind.jpg" alt="Arbind Jaiswal">
+                <div>
+                    <h3>Arbind Jaiswal</h3>
+                    <p>CEO & Founder</p>
+                    <p>Email: arbind.jaiswal@gmail.com</p>
+                </div>
+            </div>
+
+            <div class="team-member">
+                <img src="hiran.jpg" alt="Hiranaya Yadav">
+                <div>
+                    <h3>Hiranaya Yadav</h3>
+                    <p>Head of Operations</p>
+                    <p>Email: hiran.yadav@gmail.com</p>
+                </div>
+            </div>
+
+            <div class="team-member">
+                <img src="sidhant.png" alt="Sidhant Chaurasiya">
+                <div>
+                    <h3>Sidhant Chaurasiya</h3>
+                    <p>Academic Advisor</p>
+                    <p>Email: sidhant.675@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="form">
+        <h2>Apply Now</h2>
+        <form action="#" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="gender">Gender:</label>
+            <input type="radio" id="male" name="gender" value="Male" required>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="Female" required>
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="gender" value="Other" required>
+            <label for="other">Other</label>
+
+            <label for="hobbies">Hobbies:</label>
+            <input type="checkbox" id="sports" name="hobbies" value="Sports">
+            <label for="sports">Sports</label>
+            <input type="checkbox" id="movies" name="hobbies" value="Movies">
+            <label for="movies">Movies</label>
+            <input type="checkbox" id="traveling" name="hobbies" value="Traveling">
+            <label for="traveling">Traveling</label>
+
+            <label for="country">Country:</label>
+            <select id="country" name="country">
+                <option value="Nepal">Nepal</option>
+                <option value="Canada">Canada</option>
+                <option value="UK">UK</option>
+                <option value="India">India</option>
+                <option value="USA">USA</option>
+            </select>
+
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </form>
+    </div>
+
+    <footer>
+        <div class="container">
+            <img src="logo-design-49582.png" alt="Logo" class="logo">
+            <p>&copy; Kathmandu Professional University. All Rights Reserved.</p>
+            <p>Contact: <a href="mailto:kpcinfo@gmail.com">kpcinfo@gmail.com</a></p>
+            <p>Address: Mid-Baneshwor Street, Baneshwor, Nepal</p>
+            <p>Phone: +977-1456-7890</p>
+            <p>
+                <a href="#">Privacy Policy</a>
+                |
+                <a href="#">Terms & Conditions</a>
+            </p>
+        </div>
+    </footer>
+
+    
+</body>
+
+</html>

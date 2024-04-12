@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses Offered</title>
+    <style>
+        /* General styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #c05e08;
+            color: #333;
+        }
+
+        /* Container styles */
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #da9c0d;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Course card styles */
+        .course-card {
+            background-color: #b7ba09;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Centering items horizontally */
+            text-align: center; /* Centering text */
+        }
+
+        /* Course card image styles */
+        .course-picture {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        /* Table styles */
+        table {
+            width: 100%;
+            margin-bottom: 10px;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #6c2222;
+        }
+
+        th {
+            background-color: #716565;
+        }
+
+        /* Course details styles */
+        .course-details {
+            border-left: 4px solid #0f100f;
+            padding-left: 10px;
+            margin-top: 10px;
+        }
+
+        /* Heading styles */
+        h2, h3, h4 {
+            color: #4CAF50;
+        }
+
+        /* Button styles */
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+        
+    </style>
+</head>
+<body>
+<div class="container" id="courses">
+    <h2 align="center" style="color:black"><u>Courses Offered</u></h2>
+    
+    <!-- Computer Science Section -->
+    <div class="course-card">
+        <img src="computersci.jpeg" alt="Computer Science" class="course-picture">
+        <h3>Computer Science</h3>
+        <p><strong>Description of Computer Science:</strong></p>
+        <p>This is a general introduction to the principles and practices of computer science. Topics include algorithms, data structures, and more.</p>
+        <ul>
+            <li><strong>Programming and Algorithms:</strong> Students learn various programming languages and study algorithms and data structures.</li>
+            <li><strong>Software Development:</strong> Courses cover software engineering principles, design, testing, debugging, and project management.</li>
+            <li><strong>Database Management:</strong> Students learn about database design, SQL, data modeling, and management systems.</li>
+            <li><strong>Computer Networks:</strong> Topics include network protocols, security, administration, and communication technologies.</li>
+            <li><strong>Operating Systems:</strong> Students study OS concepts, processes, memory management, file systems, and virtualization.</li>
+        </ul>
+        <h4><strong>Duration:</strong> 4 Years</h4>
+        <div class="fee-structure">
+            <h4><strong>Fee Structure</strong></h4>
+            <table>
+                <tr>
+                    <th>Category</th>
+                    <th>Amount</th>
+                    <th>Discount</th>
+                </tr>
+                <tr>
+                    <td>Tuition Fee per Year</td>
+                    <td>Rs. 3,00,000</td>
+                    <td>20% Off</td>
+                </tr>
+                <tr>
+                    <td>Registration Fee</td>
+                    <td>Rs. 10,000 per year</td>
+                    <td>&nbsp;</td>
+                </tr>
+            </table>
+        </div>
+        <div class="course-details">
+            <h4><strong>Course Details</strong></h4>
+            <ul>
+                <li>The course is divided into eight semesters.</li>
+                <li>There are two exams in each semester - one midway and another at the end of the semester.</li>
+                <li>A project will be assigned to every student, which they have to submit by the last date of the examination period.</li>
+                <li>A total of 6 credits will be awarded if all subjects are passed.</li>
+            </ul>
+        </div>
+    </div>
+    
+    <!-- BBA Section -->
+    <div class="course-card">
+        <h3>Bachelor in Business Administration (BBA)</h3>
+        <p><a href="#" onclick="openCity(event, 'BBA')">View Course Details</a></p>
+        <div id="BBA" class="tabcontent"></div>
+        <h3><strong>Bachelor in Business Administration</strong></h3>
+        <ul>
+            <li>This program provides students with a broad understanding of business principles and practices.</li>
+            <li>This program aims to produce well-rounded graduates who can contribute effectively to business organizations.</li>
+            <li>The program focuses on developing skills that can help students succeed in a competitive business world.</li>
+            <li>Core courses include Principles of Managing Business, Marketing, and Finance.</li>
+            <li>The program offers a broad-based knowledge of business administration with specializations in management.</li>
+        </ul>
+        <h3><strong>Duration:</strong> Four years (Eight semesters)</h3>
+        <div class="fee-structure">
+            <h4><strong>Fee Structure</strong></h4>
+            <table>
+                <tr>
+                    <th>Category</th>
+                    <th>Amount</th>
+                    <th>Discount</th>
+                </tr>
+                <tr>
+                    <td>Tuition Fee</td>
+                    <td>2,50,000 per year</td>
+                    <td>30%</td>
+                </tr>
+                <tr>
+                    <td>Registration Fee</td>
+                    <td>Rs. 10,000</td>
+                    <td>&nbsp;</td>
+                </tr>
+            </table>
+        </div>
+        <div class="course-details">
+            <h4><strong>Course Details</strong></h4>
+            <ul>
+                <li>The BBA program is designed for students who wish to gain knowledge of the principles and practices of business administration.</li>
+                <li>Graduates of BBA programs are well-prepared for careers in diverse industries such as finance, marketing, consulting, entrepreneurship, and management roles within organizations.</li>
+                <li>The BBA program is designed to provide students with a broad understanding of business principles and practices.</li>
+            </ul>
+        </div>
+    </div>
+    
+    <!-- Engineering Section -->
+    <div class="course-card">
+        <h3>Engineering</h3>
+        <h3><strong>Duration:</strong> Four years (Eight semesters)</h3>
+        <div class="fee-structure">
+            <h4><strong>Fee Structure</strong></h4>
+            <table>
+                <tr>
+                    <th>Category</th>
+                    <th>Amount</th>
+                    <th>Discount</th>
+                </tr>
+                <tr>
+                    <td>Tuition Fee</td>
+                    <td>Rs. 10,00,000</td>
+                    <td>25%</td>
+                </tr>
+                <tr>
+                    <td>Registration Fee</td>
+                    <td>Rs. 20,000</td>
+                    <td>&nbsp;</td>
+                </tr>
+            </table>
+        </div>
+        <div class="course-details">
+            <h4><strong>Course Details</strong></h4>
+            <ul>
+                <li>The course is divided into four years.</li>
+                <li>There are eight semesters, each lasting around two months.</li>
+                <li>The curriculum of the Engineering program is designed to provide students with a solid foundation in engineering principles and practices.</li>
+                <li>Each semester contains three to four courses, which may vary from one year to another.</li>
+            </ul>
+        </div>
+        <button type="button" onclick="location.href='index.html'" align="center">Back to Home</button>
+    </div>
+    
+</div>
+
+</div>
+
+</body>
+</html>

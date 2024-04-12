@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Academics Section</title>
+<style>
+  /* Global styles */
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa; /* Light gray background */
+  }
+
+  /* Container styles */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  /* Heading styles */
+  h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #7b1355; /* Custom color for heading */
+  }
+
+  /* Academic program styles */
+  .academic-programs {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+
+  .academic-program {
+    background-color: #605d5d;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  /* Program title styles */
+  .academic-program h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #bb7c35; /* Custom color for program title */
+  }
+
+  /* Program description styles */
+  .academic-program p {
+    line-height: 1.6;
+    margin-bottom: 10px;
+  }
+
+  /* Program button styles */
+  .academic-program .btn {
+    padding: 8px 16px;
+    background-color: #cb1f1f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    margin-top: 10px;
+  }
+
+  .academic-program .btn:hover {
+    background-color: #a50f0f;
+  }
+
+  /* Image alignment */
+  .academic-program img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+
+  /* Footer styles */
+  footer {
+    background-color: #333333; /* Dark background color */
+    color: #ffffff; /* White text color */
+    padding: 20px 0;
+    text-align: center;
+    border-top: 4px solid #4CAF50; /* Green border top */
+    position: relative;
+    margin-top: 50px;
+  }
+
+  footer p {
+    margin-bottom: 10px;
+  }
+
+  footer a {
+    color: #ffffff; /* White link color */
+    text-decoration: none;
+    transition: color 0.3s ease; /* Smooth transition for link color */
+  }
+
+  footer a:hover {
+    color: #4CAF50; /* Green color on hover */
+  }
+
+  /* Logo styles */
+  .logo {
+    max-width: 100px; /* Adjust the size as needed */
+    opacity: 0.8; /* Adjust the opacity level */
+    margin-bottom: 20px;
+  }
+
+  /* Background pattern */
+  footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right, #333333, #222222); /* Gradient background */
+    opacity: 0.05; /* Adjust opacity for pattern */
+    z-index: -1;
+  }
+</style>
+</head>
+<body>
+
+<div class="container" id="academics">
+  <h2>Academics</h2>
+
+  <div class="academic-programs">
+    <div class="academic-program">
+      <h3>Computer Programming</h3>
+      <img src="computing.jpg" alt="computer programming">
+      <p>Learn programming languages such as Python, Java, C++, and others.</p>
+      <a href="#" class="btn">Learn more</a>
+    </div>
+
+    <div class="academic-program">
+      <h3>Software Development</h3>
+      <img src="computer.jpeg" alt="software development">
+      <p>Courses cover software engineering principles, design, testing, and project management.</p>
+      <a href="#" class="btn">Learn more</a>
+    </div>
+
+    <div class="academic-program">
+      <h3>Database Management</h3>
+      <img src="computersci.jpeg" alt="database management">
+      <p>Learn about database design, SQL, data modeling, and management systems.</p>
+      <a href="#" class="btn">Learn more</a>
+    </div>
+
+    <div class="academic-program">
+      <h3>Computer Networking</h3>
+      <img src="abc.jpeg" alt="computer networking">
+      <p>Explore network protocols, security, administration, and configuration.</p>
+      <a href="#" class="btn">Learn more</a>
+    </div>
+
+    <div class="academic-program">
+      <h3>Cybersecurity</h3>
+      <img src="cyber.jpg" alt="cybersecurity">
+      <p>Courses cover cybersecurity principles, cryptography, secure programming, and threat detection.</p>
+      <a href="#" class="btn">Learn more</a>
+    </div>
+
+    <div class="academic-program">
+      <h3>Artificial Intelligence</h3>
+      <img src="xyz.jpeg" alt="artificial intelligence">
+      <p>Explore AI algorithms, machine learning, data mining, and neural networks.</p>
+      <a href="#" class="btn">Learn more</a>
+    </div>
+
+    <div class="academic-program">
+      <h3>Web Development</h3>
+      <img src="ai.jpeg" alt="web development">
+      <p>Learn HTML, CSS, JavaScript, and frameworks for building websites and web applications.</p>
+      <a href="#" class="btn">Learn more</a>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="container">
+    <img src="logo-design-49582.png" alt="Logo" class="logo">
+    <p>&copy; Kathmandu Professional University. All Rights Reserved.</p>
+    <p>Contact: <a href="mailto:kpcinfo@gmail.com">kpcinfo@gmail.com</a></p>
+    <p>Address: Mid-Bnaeshwor Street, Baneshwor, Nepal</p>
+    <p>Phone: +977-1456-7890</p>
+    <p>
+      <a href="#">Privacy Policy</a>
+      |
+      <a href="#">Terms & Conditions</a>
+    </p>
+  </div>
+</footer>
+
+</body>
+</html>

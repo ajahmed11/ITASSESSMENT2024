@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kathmandu Professional University, Nepal (Ajaj)</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(253, 6, 6);
+            margin: 0;
+            padding: 0;
+        }
+
+        .header img {
+            max-width: 130px; /* Adjust the maximum width as needed */
+            margin-top: 10px; /* Add margin-top to separate the logo from the text */
+        }
+
+        .top-bar {
+            background-color: rgba(236, 108, 34, 0.865);
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        .top-bar input[type="text"] {
+            padding: 6px 10px;
+            border-radius: 5px;
+            border: none;
+            margin-right: 10px;
+            width: 200px;
+        }
+
+        .top-bar a {
+            color: rgb(247, 247, 247);
+            text-decoration:dashed;
+            margin: 0 10px;
+        }
+
+        .login-button {
+            background-color: rgb(75, 17, 235);
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 8px;
+            text-decoration: none;
+            margin-right: 10px;
+            cursor: pointer; /* Add cursor pointer */
+        }
+
+        .login-button:hover {
+            background-color: #0f14b8;
+        }
+
+          /* Hidden class to hide elements */
+        .hidden {
+          display: none;
+          background-color: #45a049;
+      }
+       .apply {
+        background-color: #0f2036;
+
+        
+
+      }
+        .register-form {
+            background-color: rgb(131, 57, 70);
+            padding: 20px;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        /* Styles for form alignment */
+    form {
+      display: float;
+      flex-direction: column;
+      align-items: center;
+  }
+  label {
+      margin-bottom: 5px;
+  }
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+      width: 250px;
+      padding: 8px;
+      margin-bottom: 10px;
+  }
+  input[type="submit"] {
+      width: 150px;
+      padding: 10px;
+      background-color: #4CAF50; /* Green */
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+  }
+  input[type="submit"]:hover {
+      background-color: #45a049; /* Darker green */
+  }
+
+        /* Add styles for active link */
+        .active {
+            background-color: #2b342b;
+            color: rgb(122, 31, 31);
+        }
+
+        /* Style the content */
+        .content {
+            padding: 16px;
+        }
+
+        /* Set a fixed height for the header */
+        .header {
+            background-color: #0b926e23;
+            padding: 30px;
+            text-align: center;
+        }
+
+        /* Responsive navigation bar */
+        @media screen and (max-width: 600px) {
+            .navbar a {
+                float:left;
+                display: flexbox;
+                text-align: left;
+            }
+        }
+
+       
+        body {
+            font-family: century, sans-serif;
+            margin: 0;
+            padding: 0;
+          }
+          
+      /* Rounded Navigation Bar */
+.navbar {
+    background-color: rgb(233, 160, 15);
+    border-radius: 25px; /* Rounded corners */
+  }
+  
+  .navbar a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration:wavy;
+    border-radius: 25px; /* Rounded corners for each link */
+  }
+  
+  .navbar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+          .banner-image img {
+            display: flex;
+            color: rgb(235, 18, 18) ;
+            max-width: 100%;
+            height: auto;
+        }
+        /* Style for team members */
+/* Styles for the About KPC container */
+.container {
+    margin: 0 auto;
+    padding: 50px;
+    background-color: #081244;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(21, 10, 168, 0.1);
+}
+        /* Style for team members */
+/* Styles for the About KPC container */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 50px;
+    background-color: #06092e;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for the image container */
+.image-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Gap between images */
+}
+
+/* Style for individual images */
+.image-container img {
+  width: calc(50% - 10px); /* 50% width for two images with gap */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 0 5px rgba(113, 50, 50, 0.2); /* Box shadow for a subtle effect */
+}
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+.team-member {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    baorder-size: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: grey;
+    border-bottom: 1px solid #120404;
+    overflow: hidden; /* Clear float */
+}
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 20px;
+    float: left;
+}
+.team-member h3 {
+    font-size: 30px;
+    margin-top: 0;
+}
+.team-member p {
+    margin-bottom: 20px;
+}
+/* Add margin to create space between team members */
+.team-member > div {
+    margin-left: 200px; /* Adjust as needed */
+}
+
+
+
+.rectangle {
+    width: 450px;
+    height: 450px;
+    border: 2px solid black;
+    padding: 10px;
+    box-sizing: border-box;
+    align: left; 
+    display: flex;
+  }
+
+  .form-label {
+    display: inline-block;
+    width: 100px;
+    
+  }
+
+
+img {
+    margin: 10px;
+    border-radius: 5px;
+}
+
+  
+          
+    </style>
+</head>
+
+<body style="background: rgb(144, 141, 141);">
+    <!-- Top Bar with Login, Apply, Search, Faculties, and Registration Form -->
+    <div class="top-bar">
+        <a href="#" class="login-button" id="login-button">Login</a>
+        <input type="text" placeholder="Search...">
+        <a href="#faculties">Faculties</a>
+        <a href="#" id="register-link">Register</a>
+
+        <button id="apply-toggle">Apply</button>
+
+    <!-- Apply form -->
+    <div id="apply-form" class="hidden">
+        <h3>Apply to Kathmandu Professional University</h3>
+        <form action="#" method="POST">
+            <label for="applicant-name">Name of Applicant:</label><br>
+            <input type="text" id="applicant-name" name="applicant-name" required><br>
+
+            <label for="applicant-email">Email:</label><br>
+            <input type="email" id="applicant-email" name="applicant-email" required><br>
+            <label for="contact-Number"> Phone Number</label><br>
+            <input type="text" name="Phone number"><br><br>
+            <label for="Course"> Which course you want to Study </label><br>
+            <input type="text" name="course"><br>
+            <label for="GPA"> Enter your +2 GPA</label> <br>
+            <input type="text" name="GPA"><br>
+
+            <label for="Passed-Year" >Enter Last year of College Attend / College Name</label><br>
+            <input type="text" name="Passed-Year"><br>
+
+            <!-- Add more form fields as needed -->
+
+            <input type="submit" value="Apply">
+        </form>
+    </div>
+
+    <script>
+        // Get the Apply toggle button and Apply form
+        const applyToggle = document.getElementById('apply-toggle');
+        const applyForm = document.getElementById('apply-form');
+
+        // Add click event listener to the toggle button
+        applyToggle.addEventListener('click', function() {
+            // Toggle the hidden class on the Apply form
+            applyForm.classList.toggle('hidden');
+        });
+    </script>
+        <div class="register-form" id="register-link">
+            <h3>Registration Form</h3>
+            <form action="#" method="POST">
+              <label for="name">Enter Your Full Name:</label><br>
+              <input type="text" id="name" name="name" required><br>
+              
+              <label for="email">Enter Your Email:</label><br>
+              <input type="email" id="email" name="email" required><br>
+              
+              <label for="password">Enter Password:</label><br>
+              <input type="password" id="password" name="password" placeholder="Password" required><br>
+              
+              <label for="confirm_password">Confirm Password:</label><br>
+              <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirm Password" required><br>
+              
+              <input type="submit" value="Register">
+          </form>
+          
+        </div>
+    </div>
+
+    <!-- University Name and Logo -->
+    <div class="header">
+      <img src="logo-design-49582.png" alt="University Logo" height=180 width=280>
+      <h1 style="color:orange; font-family: Cascadia Code SemiBold;"><b>Welcome to </b></h1>
+        <h1 style="color:orange; font-family: Cascadia Code SemiBold"> Kathmandu Professional University</h1>
+        <p align="center" style="color:orange; size: 25px;">
+          Kathmandu-32, New Baneshwor, Nepal<br>
+          +977-014675432, +977-01543578
+
+        </p>
+        <img src="logo-design-49582.png" align="left" sizes="20px" alt="University Logo">
+    </div>
+
+    <body>
+        <!-- Navigation Bar -->
+        <div class="navbar">
+            <!-- Using the navigateToPage function to link to different pages -->
+            <a href="javascript:void(0)" onclick="navigateToPage('index.html')">Home</a>
+            <a href="javascript:void(0)" onclick="navigateToPage('about.html')">About</a>
+            <a href="javascript:void(0)" onclick="navigateToPage('academics.html')">Academics</a>
+            <a href="javascript:void(0)" onclick="navigateToPage('contact.html')">Contact</a>
+            <a href="javascript:void(0)" onclick="navigateToPage('courses.html')">Courses</a>
+            <a href="javascript:void(0)" onclick="navigateToPage('student-life.html')">Student Life</a>
+            <a href="javascript:void(0)" onclick="navigateToPage('gallery.html')">Gallery</a>
+        </div>
+    
+        <!-- JavaScript function to navigate to different pages -->
+        <script>
+            function navigateToPage(url) {
+                window.location.href = url;
+            }
+        </script>
+    
+        <!-- Main content of the page -->
+        <div class="content">
+            <h1 align="center" style="color:Blue">Welcome to My Website</h1><br>
+            <h2 align="center" style="color:rgb(40, 10, 110)">This is the homepage of Kathmandu Professional University. 
+                Use the navigation bar above to explore different pages.</h2>
+            <!-- Other content can go here -->
+        </div>
+    
+    </body>
+      
+        <div class="content">
+            <div class="flex-container">
+                <div class="text-content" style="color:#0e0d13 ">
+
+                
+                    <h2 id="home" align="center" style="color:#0d7a30">Kathmandu Professional University Homepage</h2>
+                    <hr width=50% color=#680f9ba>
+                  
+                    <h4 align="center" >Welcome to the official website of Kathmandu Professional University (KPU). We are a private Organisation since 1993 AD.</h4>
+                    <p>
+                      The Kathmandu Professional University (KPU) is a private university located in the heart of Nepal's 
+                      capital city,
+                    <p>Kathmandu professioanl University is a leading institution renowned for its coastal research initiatives and 
+                        marine biology and Technology programs. Nestled along the picturesque coastline, it offers 
+                        state-of-the-art facilities for oceanographic studies and sustainable marine practices. 
+                        With a diverse student body and dedicated faculty, This University fosters innovation and 
+                        
+                        collaboration in exploring the mysteries of the ocean. Graduates emerge as stewards of marine 
+                        ecosystems, equipped to address global environmental challenges.</p><br><br>
+                    <h1 align="center">Overview:</h1>
+                    <p class="info-text" align="center">
+                        <i><b>General Information</b><br>
+                        Established in 1922.<br>
+                        Located in Kathmandu-32, Nepal, which is located midway between Buddhanagar and Tinkune.<br>
+                        255-acre campus is nestled among the city's residential area, and comprises 70 buildings, numerous playing fields, and an outdoor recreational facility near Sikes River.<br>
+                        One of 36 public institutions of higher education in Kathmandu, Nepal.<br>
+                        Only university in Nepal to become a member of the Council of Public Liberal Arts of Nepal (COPLAN).<br>
+                        Offer non-Nepali residents a special tuition rate. The university was recently recognized South Asia News and World Report's list of "10 Public Schools with the Cheapest Out-of-State Tuition."</i> 
+                    </p>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-6 d-flex align-items-center justify-content-center bg-warning text-white p-5">
+                                <div>
+                                    <h1>Discover the Future With Kathmandu Professional college !</h1>
+                                    <p class="mb-4"><em>Innovation is not solely about major discoveries. It's about constantly challenging the status quo.</em></p>
+                                    <a class="btn btn-light btn-lg">Apply Now &#10142;</a>
+                                </div>
+                            </div>
+                            <div class="col-md-6 banner-image">
+                                <img src="college.jpg" alt="Image" class="active">
+                                
+                            </div>
+        <img src="2.jpg" width="350" height="200">
+        <img src="9.jpeg" width="350" height="200"><br><br>
+        <img src="01.jpg" width="350" height="200">
+        <img src="5.jpg" width="350" height="200">
+        <img src="6.jpg" width="350" height="200">
+        <img src="4.jpg" width="350" height="200">
+                        </div>
+                    </div>
+                    <html>
+    <br><br><br>
+
+    <!-- Content Section -->
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kathmandu Professional University, Nepal (Ajaj)</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+    <style>
+        /* Your CSS styles here */
+    </style>
+</head>
+<body>
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer</title>
+    <style>
+      /* General styles */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: grey; /* Light gray background */
+      }
+    
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+    
+      /* Footer styles */
+      #footer {
+        background-color: #333333; /* Dark background color */
+        color: #ffffff; /* White text color */
+        padding: 20px 0;
+        text-align: center;
+        margin-top: 50px;
+        position: relative;
+        border-top: 4px solid #4CAF50; /* Green border top */
+      }
+    
+      #footer p {
+        margin-bottom: 10px;
+      }
+    
+      #footer a {
+        color: #ffffff; /* White link color */
+        text-decoration: none;
+        transition: color 0.3s ease; /* Smooth transition for link color */
+      }
+    
+      #footer a:hover {
+        color: #4CAF50; /* Green color on hover */
+      }
+    
+      /* Logo styles */
+      .logo {
+        max-width: 100px; /* Adjust the size as needed */
+        opacity: 0.8; /* Adjust the opacity level */
+        margin-bottom: 20px;
+      }
+    
+      
+      /* Background pattern */
+      #footer::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(to right, #333333, #222222); /* Gradient background */
+        opacity: 0.05; /* Adjust opacity for pattern */
+        z-index: -1;
+      }
+    </style>
+    </head>
+    <body>
+    <div class="container">
+      <!-- Your website content goes here -->
+    
+      <!-- Footer -->
+      <div id="footer">
+        <img src="logo-design-49582.png" alt="Logo" class="logo">
+        <p>&copy; Kathmandu Professional University. All Rights Reserved.</p>
+        <p>Contact: <a href="mailto:kpcinfo@gmail.com">kpcinfo@gmail.com</a></p>
+        <p>Address: Mid-Bnaeshwor Street, Baneshwor, Nepal</p>
+        <p>Phone: +977-1456-7890</p>
+        <p>
+          <a href="#">Privacy Policy</a>
+          |
+          <a href="#">Terms & Conditions</a>
+        </p>
+
+
+    
+    
+        
+      </div>
+    </div>
+    </body>
+    </html>
+    
